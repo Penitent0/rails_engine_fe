@@ -1,0 +1,5 @@
+<h2>Merchants Index Page</h2>
+
+<% @merchants.each do |merchant| %>
+  <p><%= link_to "#{merchant.name}", "/merchants/#{merchant.id}", local: true, method: :get %></p>
+<% end %>
