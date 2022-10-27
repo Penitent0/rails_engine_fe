@@ -9,7 +9,7 @@ RSpec.describe 'Merchant Index' do
   # I should be on page '/merchants/:id'
   # And I should see a list of items that merchant sells.
 
-  describe 'User Story - Merchants', vcr: { record: :new_episodes }do
+  describe 'User Story - Merchants', vcr: { record: :new_episodes } do
     before :each do
       @merchants = RailsEngineFacade.merchants_index
       @items = RailsEngineFacade.merchant_items(@merchants.first.id)

@@ -15,6 +15,12 @@ class RailsEngineFacade < RailsEngineService
     MerchantDetails.new(merchant_details_endpoint(merchant_id))
   end
 
+  def self.items_index 
+    items_index_endpoint[:data].map do |item|
+      ItemsIndexArray.new(item)
+    end
+  end
+
   def self.item_show(item_id)
     ItemDetails.new(item_show_endpoint(item_id))
   end
