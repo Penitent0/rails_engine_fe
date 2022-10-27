@@ -54,8 +54,7 @@ RSpec.describe RailsEngineFacade do
     end
 
     it 'instantiates item details object' do
-      item =  RailsEngineFacade.item_show(4)
-
+      item =  RailsEngineFacade.item_details(4)
 
       expect(item.name).to be_a(String)
       expect(item.description).to be_a(String)

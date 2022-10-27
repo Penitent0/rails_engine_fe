@@ -29,7 +29,7 @@ class RailsEngineService
     parse(response)
   end
 
-  def self.item_show_endpoint(item_id)
+  def self.item_details_endpoint(item_id)
     response = conn.get("api/v1/items/#{item_id}")
     parse(response)
   end

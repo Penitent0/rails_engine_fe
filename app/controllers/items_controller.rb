@@ -3,6 +3,6 @@ class ItemsController < ApplicationController
     @items = RailsEngineFacade.items_index 
   end
   def show
-    @item = RailsEngineFacade.item_show(params[:id])
+    @item = RailsEngineFacade.item_details(params[:id])
   end
 end

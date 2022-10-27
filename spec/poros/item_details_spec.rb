@@ -3,11 +3,11 @@ require 'rails_helper'
 RSpec.describe ItemDetails do
   describe 'gets item details', vcr: { record: :new_episodes } do
     it 'instantiates' do
-      expect(RailsEngineFacade.item_show(4)).to be_a(ItemDetails)
+      expect(RailsEngineFacade.item_details(4)).to be_a(ItemDetails)
     end
 
     it 'has item details' do
-      item = RailsEngineFacade.item_show(4)
+      item = RailsEngineFacade.item_details(4)
 
       expect(item.name).to be_a(String)
       expect(item.description).to be_a(String)

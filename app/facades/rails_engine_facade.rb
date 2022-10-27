@@ -21,7 +21,7 @@ class RailsEngineFacade < RailsEngineService
     end
   end
 
-  def self.item_show(item_id)
-    ItemDetails.new(item_show_endpoint(item_id))
+  def self.item_details(item_id)
+    ItemDetails.new(item_details_endpoint(item_id))
   end
 end

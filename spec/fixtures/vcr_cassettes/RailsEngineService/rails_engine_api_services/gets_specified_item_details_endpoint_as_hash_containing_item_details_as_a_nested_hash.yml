@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/merchants/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"bc1fd1230d92d0b6bb211d1985ff7fd3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - eee071a1-400b-4c0e-8d5f-19296d335c70
+      X-Runtime:
+      - '0.034733'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"merchant","attributes":{"name":"Schroeder-Jerde"}}}'
+  recorded_at: Thu, 27 Oct 2022 14:55:34 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/items/4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ea1d59bea0442421960da290dcded583"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - '0988a92a-d0e8-4ed6-800a-44379b8a7858'
+      X-Runtime:
+      - '0.025098'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"4","type":"item","attributes":{"name":"Item Nemo Facere","description":"Sunt
+        eum id eius magni consequuntur delectus veritatis. Quisquam laborum illo ut
+        ab. Ducimus in est id voluptas autem.","unit_price":42.91,"merchant_id":1}}}'
+  recorded_at: Thu, 27 Oct 2022 14:56:56 GMT
+recorded_with: VCR 6.1.0
